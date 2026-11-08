@@ -1,0 +1,57 @@
+name: Advent calendar
+description: Shows the advent calendar of one year (Mercator.Advent). Doors open day by day from 1 December.
+icon: icon-gift
+tags: ["pages"]
+
+fields:
+  year:
+    label: Year
+    type: dropdown
+    options: getAdventYearOptions
+    comment: Calendars are created in the backend under Advent.
+    span: left
+
+  simulate_date:
+    label: Simulate date
+    type: datepicker
+    mode: date
+    comment: 'Optional. This date counts as today, for testing. Leave empty for live use; it applies to all visitors while set.'
+    span: right
+
+  animation:
+    label: Animation when the doors appear
+    type: dropdown
+    default: none
+    options:
+      none: None
+      fly: Fly in from the sides
+      fade: Fade in
+      zoom: Zoom in
+      drop: Drop from above
+      flip: Flip in
+    comment: 'Plays one door after another when the calendar scrolls into view. Skipped for visitors who prefer reduced motion.'
+    span: left
+
+  randomize:
+    label: Random placement
+    type: switch
+    default: false
+    comment: 'Doors are not in order 1 to 24. The arrangement changes on every page load, for every visitor.'
+    span: right
+
+  open_past:
+    label: Allow opening earlier doors
+    type: switch
+    default: true
+    comment: 'On: all doors up to today can be opened. Off: only the door of the current day opens (doors already opened by a visitor stay readable).'
+    span: left
+==
+{% set _alias = ('adventBlock_' ~ this.alias)|replace({'-': '_', '.': '_'}) %}
+
+{{ dynComponentRender('adventCalendar', {
+    year: year,
+    simulateDate: simulate_date,
+    animation: animation,
+    randomize: randomize,
+    openPast: open_past
+}, _alias) }}

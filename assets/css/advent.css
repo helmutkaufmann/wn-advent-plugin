@@ -1,0 +1,60 @@
+/* Only layout and animation. Colours, fonts and shapes come from the host theme's UIkit classes. No gradients. */
+.mc-door{position:relative;display:block;width:100%;aspect-ratio:4/5;padding:0;border:0;overflow:hidden;cursor:pointer;text-align:left;font:inherit;perspective:800px;transition:transform .25s ease}
+.mc-door.is-unlocked:hover,.mc-door.is-unlocked:focus-visible{transform:translateY(-4px)}
+.mc-door.is-locked{cursor:not-allowed}
+.mc-door-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.mc-door.is-opened:hover .mc-door-img{transform:scale(1.08)}
+.mc-door-flap{position:absolute;inset:0;z-index:3;transform-origin:left center}
+.mc-door-flap::before{content:'';position:absolute;inset:14px;border:1px solid currentColor;opacity:.4;border-radius:2px}
+.mc-door-bignum{position:relative;font-size:clamp(2.5rem,7vw,4rem);font-weight:300;line-height:1;letter-spacing:-.03em}
+.mc-door-knob{position:absolute;right:20px;top:50%;width:10px;height:10px;border-radius:50%;background:currentColor;opacity:.6}
+.mc-door.is-opened .mc-door-flap{display:none}
+.mc-door.is-opening .mc-door-flap{transition:transform .45s cubic-bezier(.4,0,.2,1);transform:rotateY(-115deg)}
+.mc-door-num{position:absolute;z-index:4;top:1rem;left:1rem}
+.mc-door.is-unlocked:not(.is-opened) .mc-door-num,
+.mc-door.is-unlocked:not(.is-opened) .mc-door-label,
+.mc-door.is-unlocked:not(.is-opened) .mc-door-title{display:none}
+.mc-door-label{position:absolute;z-index:4;top:1rem;right:1rem}
+/* title: plain text at the bottom, no coloured overlay */
+.mc-door-title{position:absolute;z-index:2;left:0;right:0;bottom:0;box-sizing:border-box;padding:1rem;font-weight:500;line-height:1.3}
+.mc-door.is-opened .mc-door-title{padding-right:2.8rem}
+.mc-door-num,.mc-door-label{font-size:.75rem}
+.mc-door-check{display:none;position:absolute;z-index:4;right:1rem;bottom:1rem}
+.mc-door.is-opened .mc-door-check{display:block}
+.mc-door-lock{position:absolute;left:50%;top:42%;transform:translate(-50%,-50%)}
+.mc-door-title-locked{position:absolute;left:0;right:0;top:58%;text-align:center}
+.mc-door.is-shaking{animation:mc-shake .4s}
+@keyframes mc-shake{20%,60%{transform:translateX(-5px)}40%,80%{transform:translateX(5px)}}
+.mc-advent-modal .uk-modal-dialog{max-width:42rem;overflow:hidden}
+.mc-advent-modal figure img{display:block;max-height:46vh;object-fit:cover}
+.mc-advent-modal .uk-modal-title{font-weight:300}
+.mc-advent-modal .mc-figure{margin:1.25rem 0}
+.mc-advent-modal .mc-figure img{display:block;margin:0 auto;width:auto;max-width:100%;height:auto;max-height:46vh;object-fit:contain;border-radius:4px}
+.mc-advent-modal .mc-figure figcaption{margin-top:.4rem;font-size:.75rem;line-height:1.35}
+@media (prefers-reduced-motion:reduce){.mc-door,.mc-door-img,.mc-door.is-opening .mc-door-flap{transition:none}.mc-door.is-shaking{animation:none}}
+
+.mc-advent-grid{max-width:80rem;margin-left:auto;margin-right:auto}
+.mc-door-bignum{font-size:clamp(2rem,4vw,3.25rem)}
+/* UIkit's card-primary sets the colour on the flap's children, so the custom text colour is applied to them directly */
+.mc-door .mc-door-flap[style*="--mc-door-text"] .mc-door-bignum,.mc-door .mc-door-flap[style*="--mc-door-text"] .mc-door-knob{color:var(--mc-door-text)}
+
+/* missed doors (option "open earlier doors" off): closed unless the visitor opened them before */
+.mc-door.is-missed:not(.is-opened){opacity:.55;cursor:not-allowed}
+/* optional entrance animation (data-animate: fly, fade, zoom, drop, flip): doors appear one after another when the calendar scrolls into view */
+.mc-advent.mc-fly .mc-door-cell{opacity:0}
+.mc-advent.mc-fly-fly .mc-door-cell{transform:translate(var(--mc-fx,0),var(--mc-fy,0)) rotate(var(--mc-fr,0deg)) scale(.85)}
+.mc-advent.mc-fly-fly .mc-door-cell:nth-child(4n+1){--mc-fx:-60vw;--mc-fr:-8deg}
+.mc-advent.mc-fly-fly .mc-door-cell:nth-child(4n+2){--mc-fy:40vh;--mc-fr:5deg}
+.mc-advent.mc-fly-fly .mc-door-cell:nth-child(4n+3){--mc-fx:60vw;--mc-fr:8deg}
+.mc-advent.mc-fly-fly .mc-door-cell:nth-child(4n){--mc-fy:-40vh;--mc-fr:-5deg}
+.mc-advent.mc-fly-zoom .mc-door-cell{transform:scale(.2)}
+.mc-advent.mc-fly-drop .mc-door-cell{transform:translateY(-60vh)}
+.mc-advent.mc-fly-flip .mc-door-cell{transform:perspective(600px) rotateY(90deg)}
+.mc-advent.mc-fly.is-in .mc-door-cell{opacity:1;transform:none;transition:transform .8s cubic-bezier(.2,.9,.25,1.1) calc(var(--mc-i,0) * 55ms),opacity .5s ease calc(var(--mc-i,0) * 55ms)}
+.mc-advent.mc-fly-fade.is-in .mc-door-cell{transition:opacity .8s ease calc(var(--mc-i,0) * 55ms)}
+@media (prefers-reduced-motion:reduce){.mc-advent.mc-fly .mc-door-cell{opacity:1;transform:none;transition:none}}
+
+/* future doors look like closed doors, plus a lock and the opening date */
+.mc-door-lock-corner{position:absolute;top:1rem;right:1rem}
+.mc-door-opens{position:absolute;left:0;right:0;bottom:1rem;text-align:center}
+.mc-door .mc-door-flap[style*="--mc-door-text"] .mc-door-lock-corner,.mc-door .mc-door-flap[style*="--mc-door-text"] .mc-door-opens{color:var(--mc-door-text)}

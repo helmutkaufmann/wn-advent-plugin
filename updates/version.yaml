@@ -1,0 +1,6 @@
+v1.0.1:
+    - 'Create the advent calendars table.'
+    - create_calendars_table.php
+v1.0.2:
+    - 'Add door colour and door text colour.'
+    - add_door_colors.php

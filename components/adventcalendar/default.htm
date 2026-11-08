@@ -1,0 +1,63 @@
+{% set calendar = __SELF__.calendar %}
+<link rel="stylesheet" href="/plugins/mercator/advent/assets/css/advent.css">
+
+{% if not calendar %}
+<div class="mc-advent uk-alert" uk-alert><p>Für {{ __SELF__.year }} gibt es keinen Adventskalender.</p></div>
+{% else %}
+{% set before = __SELF__.beforeAdvent %}
+<section class="mc-advent uk-margin-large-bottom" data-mc-advent data-year="{{ calendar.year }}"{% if __SELF__.animation %} data-animate="{{ __SELF__.animation }}"{% endif %} aria-label="{{ calendar.title }}">
+    {% if before or __SELF__.isSimulated or __SELF__.isPreview %}
+    <header class="uk-text-center uk-margin-medium-bottom">
+        {% if before %}<div class="uk-alert-primary uk-width-xlarge uk-margin-auto" uk-alert role="status"><p>{{ __SELF__.waitingMessage }}</p></div>{% endif %}
+        {% if __SELF__.isSimulated %}<div class="uk-alert-warning uk-width-xlarge uk-margin-auto" uk-alert role="status"><p>Simulation: Es gilt der {{ __SELF__.now|date('d.m.Y') }} als heutiges Datum.</p></div>{% endif %}
+        {% if __SELF__.isPreview %}<div class="uk-alert-warning uk-width-xlarge uk-margin-auto" uk-alert role="status"><p>Vorschau für Backend-Benutzer: alle Türchen sind offen.</p></div>{% endif %}
+    </header>
+    {% endif %}
+
+    <div class="uk-grid-small uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-child-width-1-6@l uk-child-width-1-8@xl mc-advent-grid" uk-grid>
+        {% for door in __SELF__.doors %}
+        <div class="mc-door-cell" style="--mc-i:{{ loop.index0 }}">
+            <button type="button"
+                class="mc-door uk-card uk-card-default uk-border-rounded {{ door.unlocked ? 'uk-card-hover is-unlocked' : 'uk-text-muted is-locked' }}{{ door.missed ? ' is-missed' : '' }}"
+                data-day="{{ door.day }}"
+                data-unlocked="{{ door.unlocked ? '1' : '0' }}"{% if door.missed %} data-missed="1"{% endif %}
+                aria-label="Türchen {{ door.day }}{{ door.unlocked ? (door.missed ? ', verpasst' : (door.title ? ': ' ~ door.title : '')) : ', öffnet am ' ~ door.opens }}">
+                {% if door.unlocked %}
+                    {% if door.image %}<img class="mc-door-img" src="{{ door.image }}" alt="" loading="lazy">{% endif %}
+                    <span {% if __SELF__.flapStyle %}style="{{ __SELF__.flapStyle }}" {% endif %}class="mc-door-flap uk-card-primary uk-flex uk-flex-center uk-flex-middle"><span class="mc-door-bignum">{{ door.day }}</span><span class="mc-door-knob"></span></span>
+                    <span class="mc-door-num uk-text-bold">{{ door.day }}</span>
+                    {% if door.label %}<span class="mc-door-label uk-text-meta uk-text-uppercase">{{ door.label }}</span>{% endif %}
+                    <span class="mc-door-title uk-text-small">{{ door.title }}</span>
+                    <span class="mc-door-check uk-text-success" uk-icon="icon: check"></span>
+                {% else %}
+                    <span {% if __SELF__.flapStyle %}style="{{ __SELF__.flapStyle }}" {% endif %}class="mc-door-flap uk-card-primary uk-flex uk-flex-center uk-flex-middle"><span class="mc-door-bignum">{{ door.day }}</span><span class="mc-door-knob"></span><span class="mc-door-lock-corner" uk-icon="icon: lock"></span><span class="mc-door-opens uk-text-small">{{ door.opens|slice(0, 6) }}</span></span>
+                {% endif %}
+            </button>
+            {% if door.unlocked %}
+            <template data-door-content="{{ door.day }}">
+                {% if door.image and door.image_top %}
+                <figure class="uk-margin-remove uk-card-media-top">
+                    <img class="uk-width-1-1" src="{{ door.image }}" alt="{{ door.title }}">
+                    {% if door.credit %}<figcaption class="uk-text-meta uk-padding-small uk-padding-remove-vertical uk-margin-small-top">{{ door.credit }}</figcaption>{% endif %}
+                </figure>
+                {% endif %}
+                <div class="uk-modal-body">
+                    <p class="uk-text-meta uk-text-uppercase uk-margin-remove">{{ door.day }}. Dezember{% if door.label %} · {{ door.label }}{% endif %}</p>
+                    <h3 class="uk-modal-title">{{ door.title }}</h3>
+                    {{ renderBlocks(door.content) }}
+                </div>
+            </template>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="mc-advent-modal" uk-modal data-mc-modal>
+        <div class="uk-modal-dialog uk-margin-auto-vertical">
+            <button class="uk-modal-close-default" type="button" uk-close aria-label="Schliessen"></button>
+            <div data-mc-dialog-body></div>
+        </div>
+    </div>
+</section>
+<script src="/plugins/mercator/advent/assets/js/advent.js" defer></script>
+{% endif %}

@@ -1,0 +1,30 @@
+{
+    "name": "mercator/wn-advent-plugin",
+    "type": "winter-plugin",
+    "description": "Advent calendar for Winter CMS: one calendar per year, 24 doors, each door holds blocks",
+    "homepage": "https://github.com/helmutkaufmann/wn-advent-plugin",
+    "keywords": ["winter cms", "winter", "plugin", "advent", "advent calendar", "blocks"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Helmut Kaufmann",
+            "email": "software@mercator.li",
+            "role": "Original Author"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/helmutkaufmann/wn-advent-plugin/issues",
+        "source": "https://github.com/helmutkaufmann/wn-advent-plugin"
+    },
+    "require": {
+        "php": ">=8.0",
+        "composer/installers": "~1.0",
+        "winter/wn-pages-plugin": "dev-main as 1.0.0",
+        "winter/wn-blocks-plugin": "dev-main as 1.0.0"
+    },
+    "extra": {
+        "installer-name": "advent"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

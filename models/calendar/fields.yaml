@@ -1,0 +1,78 @@
+fields:
+    year:
+        label: Year
+        type: number
+        span: left
+        required: true
+        comment: One calendar per year.
+    title:
+        label: Title
+        type: text
+        span: right
+        required: true
+    intro:
+        label: Introduction
+        type: textarea
+        size: small
+        span: full
+        comment: Shown above the doors.
+    waiting_message:
+        label: Message before 1 December
+        type: textarea
+        size: small
+        span: full
+        comment: 'Optional. Use :date and :days as placeholders. Default text is used if empty.'
+    door_color:
+        label: Door colour
+        type: colorpicker
+        span: left
+        comment: 'Closed doors. Empty = theme primary colour.'
+    door_text_color:
+        label: Door text colour
+        type: colorpicker
+        span: right
+        comment: 'Number on closed doors. Empty = theme default.'
+tabs:
+    fields:
+        doors:
+            tab: Doors
+            label: Doors
+            type: repeater
+            prompt: Door
+            minItems: 24
+            maxItems: 24
+            titleFrom: title
+            span: full
+            comment: 'Exactly 24 doors. Position = day: first entry is 1 December, last is 24 December. Drag to reorder; labels follow.'
+            form:
+                fields:
+                    title:
+                        label: Title
+                        type: text
+                        span: left
+                    label:
+                        label: Label
+                        type: text
+                        span: right
+                        comment: Small tag on the door, e.g. a category.
+                    image:
+                        label: Image
+                        type: mediafinder
+                        mode: image
+                        span: left
+                        comment: Optional. Shown on the door and above the text.
+                    image_credit:
+                        label: Image credit
+                        type: text
+                        span: right
+                        comment: 'Source and licence, e.g. "Foto: Name, CC BY-SA 4.0".'
+                    image_top:
+                        label: Show image above the text
+                        type: switch
+                        default: true
+                        span: full
+                        comment: 'Off = the image is only used on the door; place pictures inside the text instead (figure with figcaption).'
+                    content:
+                        label: Content
+                        type: blocks
+                        span: full

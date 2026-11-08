@@ -1,0 +1,25 @@
+<?= Form::open(['url' => Backend::url('mercator/advent/calendars/import'), 'files' => true]) ?>
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="popup">&times;</button>
+        <h4 class="modal-title">Import calendar from ZIP</h4>
+    </div>
+    <div class="modal-body">
+        <p>Choose a ZIP made with <em>Export ZIP</em> (calendar.json and the images). The images are stored in the media library under <code>advent/&lt;year&gt;</code>.</p>
+        <div class="form-group">
+            <label for="adventImportFile">ZIP file</label>
+            <input type="file" name="archive" id="adventImportFile" class="form-control" accept=".zip,application/zip" required>
+        </div>
+        <div class="form-group">
+            <label for="adventImportYear">Year (empty = year from the file)</label>
+            <input type="number" name="year" id="adventImportYear" class="form-control" min="2000" max="2100">
+        </div>
+        <div class="checkbox custom-checkbox">
+            <input type="checkbox" name="replace" value="1" id="adventImportReplace">
+            <label for="adventImportReplace">Replace existing calendar of this year (overwrites its title, intro and doors)</label>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Import</button>
+        <button type="button" class="btn btn-default" data-dismiss="popup">Cancel</button>
+    </div>
+<?= Form::close() ?>

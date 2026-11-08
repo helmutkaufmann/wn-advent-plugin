@@ -1,0 +1,12 @@
+columns:
+    year:
+        label: Year
+        searchable: true
+        sortable: true
+    title:
+        label: Title
+        searchable: true
+    updated_at:
+        label: Updated
+        type: datetime
+        sortable: true

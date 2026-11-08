@@ -1,0 +1,4 @@
+-e # Ignore compressed tar archives
+*.tgz
+*.tar
+vendor/*

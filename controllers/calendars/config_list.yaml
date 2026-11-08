@@ -1,0 +1,12 @@
+title: Advent calendars
+list: $/mercator/advent/models/calendar/columns.yaml
+modelClass: Mercator\Advent\Models\Calendar
+recordUrl: mercator/advent/calendars/update/:id
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: Search
+showSetup: false
+defaultSort:
+    column: year
+    direction: desc

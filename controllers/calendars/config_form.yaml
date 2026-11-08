@@ -1,0 +1,10 @@
+name: Advent calendar
+form: $/mercator/advent/models/calendar/fields.yaml
+modelClass: Mercator\Advent\Models\Calendar
+defaultRedirect: mercator/advent/calendars
+create:
+    redirect: mercator/advent/calendars/update/:id
+    redirectClose: mercator/advent/calendars
+update:
+    redirect: mercator/advent/calendars
+    redirectClose: mercator/advent/calendars
