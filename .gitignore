@@ -1,4 +1,4 @@
--e # Ignore compressed tar archives
+# Ignore compressed tar archives
 .DS_Store
 *.tgz
 *.tar
