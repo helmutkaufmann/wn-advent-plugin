@@ -19,7 +19,7 @@
     "require": {
         "php": ">=8.0",
         "composer/installers": "~1.0",
-        "winter/wn-pages-plugin": "dev-main",
+        "winter/wn-pages-plugin": "^2.1",
         "winter/wn-blocks-plugin": "dev-main"
     },
     "extra": {
