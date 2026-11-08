@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640"><defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a0f3d"/><stop offset=".55" stop-color="#3a1458"/><stop offset="1" stop-color="#7a1f4d"/></linearGradient>
+<linearGradient id="door" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".16"/><stop offset="1" stop-color="#ffffff" stop-opacity=".05"/></linearGradient>
+<linearGradient id="door2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff7aa8" stop-opacity=".28"/><stop offset="1" stop-color="#ff7aa8" stop-opacity=".08"/></linearGradient>
+<linearGradient id="warm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff1b8"/><stop offset="1" stop-color="#ffb347"/></linearGradient>
+<radialGradient id="glow"><stop offset="0" stop-color="#ffcf6a"/><stop offset="1" stop-color="#ff8a3d" stop-opacity="0"/></radialGradient>
+<filter id="blur" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="22"/></filter>
+</defs>
+<rect width="1280" height="640" fill="url(#bg)"/><circle cx="663" cy="154" r="2" fill="#fff" opacity="0.6"/><circle cx="98" cy="74" r="1" fill="#fff" opacity="0.4"/><circle cx="1193" cy="59" r="1" fill="#fff" opacity="0.25"/><circle cx="176" cy="444" r="2" fill="#fff" opacity="0.25"/><circle cx="492" cy="92" r="2" fill="#fff" opacity="0.25"/><circle cx="1158" cy="126" r="1" fill="#fff" opacity="0.6"/><circle cx="1193" cy="63" r="2" fill="#fff" opacity="0.25"/><circle cx="452" cy="47" r="1" fill="#fff" opacity="0.4"/><circle cx="858" cy="147" r="1" fill="#fff" opacity="0.6"/><circle cx="631" cy="573" r="1" fill="#fff" opacity="0.25"/><circle cx="1191" cy="584" r="1" fill="#fff" opacity="0.4"/><circle cx="199" cy="560" r="1" fill="#fff" opacity="0.6"/><circle cx="122" cy="633" r="1" fill="#fff" opacity="0.4"/><circle cx="1088" cy="437" r="1.5" fill="#fff" opacity="0.4"/><circle cx="1199" cy="464" r="1.5" fill="#fff" opacity="0.4"/><circle cx="508" cy="184" r="1" fill="#fff" opacity="0.25"/><circle cx="1176" cy="307" r="2" fill="#fff" opacity="0.4"/><circle cx="919" cy="294" r="1" fill="#fff" opacity="0.25"/><circle cx="1048" cy="428" r="1" fill="#fff" opacity="0.4"/><circle cx="311" cy="500" r="2" fill="#fff" opacity="0.25"/><circle cx="158" cy="571" r="1.5" fill="#fff" opacity="0.4"/><circle cx="717" cy="608" r="2" fill="#fff" opacity="0.6"/><circle cx="934" cy="70" r="1" fill="#fff" opacity="0.4"/><circle cx="970" cy="66" r="1" fill="#fff" opacity="0.6"/><circle cx="634" cy="591" r="2" fill="#fff" opacity="0.4"/><circle cx="790" cy="355" r="1" fill="#fff" opacity="0.4"/><circle cx="727" cy="172" r="1" fill="#fff" opacity="0.4"/><circle cx="120" cy="223" r="1.5" fill="#fff" opacity="0.25"/><circle cx="507" cy="407" r="2" fill="#fff" opacity="0.4"/><circle cx="165" cy="170" r="2" fill="#fff" opacity="0.4"/><circle cx="1125" cy="284" r="1" fill="#fff" opacity="0.4"/><circle cx="1126" cy="285" r="2" fill="#fff" opacity="0.4"/><circle cx="779" cy="236" r="1" fill="#fff" opacity="0.25"/><circle cx="360" cy="154" r="1" fill="#fff" opacity="0.6"/><circle cx="477" cy="12" r="2" fill="#fff" opacity="0.6"/><circle cx="373" cy="269" r="1.5" fill="#fff" opacity="0.25"/><circle cx="298" cy="429" r="1.5" fill="#fff" opacity="0.6"/><circle cx="1159" cy="326" r="1" fill="#fff" opacity="0.6"/><circle cx="1055" cy="632" r="1" fill="#fff" opacity="0.4"/><circle cx="1145" cy="401" r="2" fill="#fff" opacity="0.4"/><circle cx="807" cy="106" r="2" fill="#fff" opacity="0.6"/><circle cx="820" cy="63" r="1" fill="#fff" opacity="0.25"/><circle cx="427" cy="451" r="1" fill="#fff" opacity="0.25"/><circle cx="696" cy="615" r="1" fill="#fff" opacity="0.25"/><circle cx="0" cy="580" r="1" fill="#fff" opacity="0.6"/><circle cx="207" cy="372" r="1" fill="#fff" opacity="0.25"/><circle cx="425" cy="628" r="2" fill="#fff" opacity="0.25"/><circle cx="516" cy="355" r="1.5" fill="#fff" opacity="0.4"/><circle cx="251" cy="118" r="2" fill="#fff" opacity="0.4"/><circle cx="983" cy="495" r="1.5" fill="#fff" opacity="0.25"/><circle cx="295" cy="104" r="1.5" fill="#fff" opacity="0.6"/><circle cx="542" cy="490" r="1" fill="#fff" opacity="0.6"/><circle cx="47" cy="210" r="1.5" fill="#fff" opacity="0.25"/><circle cx="1112" cy="27" r="1.5" fill="#fff" opacity="0.6"/><circle cx="186" cy="267" r="1.5" fill="#fff" opacity="0.25"/><circle cx="728" cy="228" r="1.5" fill="#fff" opacity="0.6"/><circle cx="456" cy="627" r="1" fill="#fff" opacity="0.25"/><circle cx="820" cy="232" r="1" fill="#fff" opacity="0.6"/><circle cx="1009" cy="364" r="1" fill="#fff" opacity="0.25"/><circle cx="572" cy="483" r="1.5" fill="#fff" opacity="0.25"/><circle cx="1239" cy="352" r="2" fill="#fff" opacity="0.6"/><circle cx="715" cy="373" r="1" fill="#fff" opacity="0.25"/><circle cx="209" cy="232" r="2" fill="#fff" opacity="0.25"/><circle cx="691" cy="209" r="2" fill="#fff" opacity="0.6"/><circle cx="1249" cy="1" r="2" fill="#fff" opacity="0.6"/><circle cx="704" cy="86" r="1" fill="#fff" opacity="0.4"/><circle cx="408" cy="489" r="1" fill="#fff" opacity="0.4"/><circle cx="680" cy="88" r="2" fill="#fff" opacity="0.4"/><circle cx="822" cy="86" r="1" fill="#fff" opacity="0.25"/><circle cx="260" cy="28" r="1" fill="#fff" opacity="0.6"/><circle cx="953" cy="149" r="2" fill="#fff" opacity="0.6"/><circle cx="717" cy="159" r="1" fill="#fff" opacity="0.25"/><circle cx="29" cy="105" r="1" fill="#fff" opacity="0.4"/><circle cx="398" cy="216" r="1" fill="#fff" opacity="0.4"/><circle cx="435" cy="299" r="1" fill="#fff" opacity="0.6"/><circle cx="667" cy="265" r="2" fill="#fff" opacity="0.25"/><circle cx="124" cy="362" r="2" fill="#fff" opacity="0.6"/><circle cx="1194" cy="529" r="2" fill="#fff" opacity="0.6"/><circle cx="267" cy="544" r="1" fill="#fff" opacity="0.6"/><circle cx="1045" cy="19" r="2" fill="#fff" opacity="0.25"/><circle cx="1246" cy="4" r="1" fill="#fff" opacity="0.25"/><circle cx="289" cy="484" r="1" fill="#fff" opacity="0.6"/><circle cx="126" cy="333" r="2" fill="#fff" opacity="0.25"/><circle cx="1147" cy="58" r="1" fill="#fff" opacity="0.25"/><circle cx="567" cy="43" r="1" fill="#fff" opacity="0.6"/><circle cx="926" cy="575" r="1" fill="#fff" opacity="0.25"/><circle cx="907" cy="333" r="1" fill="#fff" opacity="0.6"/><circle cx="567" cy="463" r="2" fill="#fff" opacity="0.6"/><circle cx="507" cy="535" r="1.5" fill="#fff" opacity="0.6"/><circle cx="414" cy="458" r="1" fill="#fff" opacity="0.4"/>
+<g transform="translate(700,70)"><rect x="0" y="0" width="70" height="100" rx="8.4" fill="url(#door)" stroke="#ffffff" stroke-opacity=".12"/>
+<text x="35.0" y="60.29" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-weight="300" font-size="29.4" fill="#fff" fill-opacity=".85">1</text>
+<circle cx="57.4" cy="50.0" r="3.15" fill="#ffd27a"/>
+<rect x="86" y="0" width="70" height="100" rx="8.4" fill="url(#door)" stroke="#ffffff" stroke-opacity=".12"/>
+<text x="121.0" y="60.29" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-weight="300" font-size="29.4" fill="#fff" fill-opacity=".85">2</text>
+<circle cx="143.4" cy="50.0" r="3.15" fill="#ffd27a"/>
+<rect x="172" y="0" width="70" height="100" rx="8.4" fill="url(#door)" stroke="#ffffff" stroke-opacity=".12"/>
+<text x="207.0" y="60.29" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-weight="300" font-size="29.4" fill="#fff" fill-opacity=".85">3</text>
+<circle cx="229.4" cy="50.0" r="3.15" fill="#ffd27a"/>
+<rect x="258" y="0" width="70" height="100" rx="8.4" fill="url(#door)" stroke="#ffffff" stroke-opacity=".12"/>
+<text x="293.0" y="60.29" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-weight="300" font-size="29.4" fill="#fff" fill-opacity=".85">4</text>
+<circle cx="315.4" cy="50.0" r="3.15" fill="#ffd27a"/>
+<rect x="344" y="0" width="70" height="100" rx="8.4" fill="url(#door2)" stroke="#ffffff" stroke-opacity=".12"/>
+<text x="379.0" y="60.29" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-weight="300" font-size="29.4" fill="#fff" fill-opacity=".85">5</text>
+<circle cx="401.4" cy="50.0" r="3.15" fill="#ffd27a"/>
+<rect x="430" y="0" width="70" height="100" rx="8.4" fill="url(#door)" stroke="#ffffff" stroke-opacity=".12"/>
+<text x="465.0" y="60.29" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-weight="300" font-size="29.4" fill="#fff" fill-opacity=".85">6</text>
+<circle cx="487.4" cy="50.0" r="3.15" fill="#ffd27a"/>
+<rect x="0" y="116" width="70" height="100" rx="8.4" fill="url(#door)" stroke="#ffffff" stroke-opacity=".12"/>
+<text x="35.0" y="176.29" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-weight="300" font-size="29.4" fill="#fff" fill-opacity=".85">7</text>
+<circle cx="57.4" cy="166.0" r="3.15" fill="#ffd27a"/>
+<rect x="86" y="116" width="70" height="100" rx="8.4" fill="url(#door)" stroke="#ffffff" stroke-opacity=".12"/>
+<text x="121.0" y="176.29" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-weight="300" font-size="29.4" fill="#fff" fill-opacity=".85">8</text>
+<circle cx="143.4" cy="166.0" r="3.15" fill="#ffd27a"/>
+<rect x="172" y="116" width="70" height="100" rx="8.4" fill="url(#door)" stroke="#ffffff" stroke-opacity=".12"/>
+<text x="207.0" y="176.29" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-weight="300" font-size="29.4" fill="#fff" fill-opacity=".85">9</text>
+<circle cx="229.4" cy="166.0" r="3.15" fill="#ffd27a"/>
+<rect x="258" y="116" width="70" height="100" rx="8.4" fill="url(#glow)" filter="url(#blur)" opacity=".9"/>
+<rect x="258" y="116" width="70" height="100" rx="8.4" fill="url(#warm)"/>
+<path d="M258 116 L280.4 122.0 L280.4 210.0 L258 216 Z" fill="#1b1033" opacity=".85"/>
+<rect x="344" y="116" width="70" height="100" rx="8.4" fill="url(#door)" stroke="#ffffff" stroke-opacity=".12"/>
+<text x="379.0" y="176.29" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-weight="300" font-size="29.4" fill="#fff" fill-opacity=".85">11</text>
+<circle cx="401.4" cy="166.0" r="3.15" fill="#ffd27a"/>
+<rect x="430" y="116" width="70" height="100" rx="8.4" fill="url(#door)" stroke="#ffffff" stroke-opacity=".12"/>
+<text x="465.0" y="176.29" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-weight="300" font-size="29.4" fill="#fff" fill-opacity=".85">12</text>
+<circle cx="487.4" cy="166.0" r="3.15" fill="#ffd27a"/>
+<rect x="0" y="232" width="70" height="100" rx="8.4" fill="url(#door)" stroke="#ffffff" stroke-opacity=".12"/>
+<text x="35.0" y="292.29" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-weight="300" font-size="29.4" fill="#fff" fill-opacity=".85">13</text>
+<circle cx="57.4" cy="282.0" r="3.15" fill="#ffd27a"/>
+<rect x="86" y="232" width="70" height="100" rx="8.4" fill="url(#door)" stroke="#ffffff" stroke-opacity=".12"/>
+<text x="121.0" y="292.29" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-weight="300" font-size="29.4" fill="#fff" fill-opacity=".85">14</text>
+<circle cx="143.4" cy="282.0" r="3.15" fill="#ffd27a"/>
+<rect x="172" y="232" width="70" height="100" rx="8.4" fill="url(#door2)" stroke="#ffffff" stroke-opacity=".12"/>
+<text x="207.0" y="292.29" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-weight="300" font-size="29.4" fill="#fff" fill-opacity=".85">15</text>
+<circle cx="229.4" cy="282.0" r="3.15" fill="#ffd27a"/>
+<rect x="258" y="232" width="70" height="100" rx="8.4" fill="url(#door)" stroke="#ffffff" stroke-opacity=".12"/>
+<text x="293.0" y="292.29" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-weight="300" font-size="29.4" fill="#fff" fill-opacity=".85">16</text>
+<circle cx="315.4" cy="282.0" r="3.15" fill="#ffd27a"/>
+<rect x="344" y="232" width="70" height="100" rx="8.4" fill="url(#door)" stroke="#ffffff" stroke-opacity=".12"/>
+<text x="379.0" y="292.29" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-weight="300" font-size="29.4" fill="#fff" fill-opacity=".85">17</text>
+<circle cx="401.4" cy="282.0" r="3.15" fill="#ffd27a"/>
+<rect x="430" y="232" width="70" height="100" rx="8.4" fill="url(#door)" stroke="#ffffff" stroke-opacity=".12"/>
+<text x="465.0" y="292.29" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-weight="300" font-size="29.4" fill="#fff" fill-opacity=".85">18</text>
+<circle cx="487.4" cy="282.0" r="3.15" fill="#ffd27a"/>
+<rect x="0" y="348" width="70" height="100" rx="8.4" fill="url(#door)" stroke="#ffffff" stroke-opacity=".12"/>
+<text x="35.0" y="408.29" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-weight="300" font-size="29.4" fill="#fff" fill-opacity=".85">19</text>
+<circle cx="57.4" cy="398.0" r="3.15" fill="#ffd27a"/>
+<rect x="86" y="348" width="70" height="100" rx="8.4" fill="url(#door2)" stroke="#ffffff" stroke-opacity=".12"/>
+<text x="121.0" y="408.29" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-weight="300" font-size="29.4" fill="#fff" fill-opacity=".85">20</text>
+<circle cx="143.4" cy="398.0" r="3.15" fill="#ffd27a"/>
+<rect x="172" y="348" width="70" height="100" rx="8.4" fill="url(#door)" stroke="#ffffff" stroke-opacity=".12"/>
+<text x="207.0" y="408.29" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-weight="300" font-size="29.4" fill="#fff" fill-opacity=".85">21</text>
+<circle cx="229.4" cy="398.0" r="3.15" fill="#ffd27a"/>
+<rect x="258" y="348" width="70" height="100" rx="8.4" fill="url(#door)" stroke="#ffffff" stroke-opacity=".12"/>
+<text x="293.0" y="408.29" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-weight="300" font-size="29.4" fill="#fff" fill-opacity=".85">22</text>
+<circle cx="315.4" cy="398.0" r="3.15" fill="#ffd27a"/>
+<rect x="344" y="348" width="70" height="100" rx="8.4" fill="url(#door)" stroke="#ffffff" stroke-opacity=".12"/>
+<text x="379.0" y="408.29" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-weight="300" font-size="29.4" fill="#fff" fill-opacity=".85">23</text>
+<circle cx="401.4" cy="398.0" r="3.15" fill="#ffd27a"/>
+<rect x="430" y="348" width="70" height="100" rx="8.4" fill="url(#door)" stroke="#ffffff" stroke-opacity=".12"/>
+<text x="465.0" y="408.29" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-weight="300" font-size="29.4" fill="#fff" fill-opacity=".85">24</text>
+<circle cx="487.4" cy="398.0" r="3.15" fill="#ffd27a"/></g>
+<text x="70" y="270" font-family="Helvetica Neue,Arial,sans-serif" font-weight="700" font-size="92" fill="#fff" letter-spacing="-2">Advent</text>
+<text x="70" y="366" font-family="Helvetica Neue,Arial,sans-serif" font-weight="700" font-size="92" fill="#ffd27a" letter-spacing="-2">Calendar</text>
+<text x="74" y="430" font-family="Helvetica Neue,Arial,sans-serif" font-weight="300" font-size="32" fill="#fff" fill-opacity=".85">24 doors. One per year. Built with blocks.</text>
+<rect x="74" y="472" width="228" height="46" rx="23" fill="#fff" fill-opacity=".14" stroke="#fff" stroke-opacity=".3"/>
+<text x="188" y="503" text-anchor="middle" font-family="Helvetica Neue,Arial,sans-serif" font-weight="600" font-size="22" fill="#fff">for Winter CMS</text>
+</svg>

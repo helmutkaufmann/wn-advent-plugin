@@ -1,5 +1,7 @@
 # Mercator.Advent
 
+![Advent Calendar for Winter CMS](docs/social-preview.png)
+
 Generic advent calendar for WinterCMS. One calendar per year, 24 doors, each door holds a repeater of blocks.
 
 ## Screenshots
